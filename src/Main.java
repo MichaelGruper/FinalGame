@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        JPanel panel = new JPanel();
+        MyPanel panel = new MyPanel();
         JFrame frame = new JFrame();
         frame.setSize(500,500);
 
