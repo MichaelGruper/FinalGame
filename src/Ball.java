@@ -8,7 +8,7 @@ public class Ball {
     private int randomB;
     private Color color;
     private int xSpeed, ySpeed;
-    private int xLoc, yLoc;
+    private int xLoc, yLoc, xCenter, yCenter;
 
     public Ball(int xLoc, int yLoc){
         this.xLoc = xLoc;
@@ -38,11 +38,22 @@ public class Ball {
     public int getXLoc(){
         return xLoc;
     }
+    public double getRadius(){
+        return 10.0;
+    }
     public int getYLoc(){
         return yLoc;
     }
     public int getXSpeed(){
         return xSpeed;
+    }
+    public int getXCenter(){
+        xCenter = 10+xLoc;
+        return xCenter;
+    }
+    public int getYCenter(){
+        yCenter = 10+yLoc;
+        return yCenter;
     }
     public void setXSpeed(int newSpeed){
         xSpeed *= newSpeed;

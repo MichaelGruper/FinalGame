@@ -1,8 +1,7 @@
 import java.awt.*;
 
 public class Ship {
-private int xloc, yloc, width, height, xMove, yMove, centerPoint;
-private double radius;
+private int xloc, yloc, width, height, xMove, yMove, centerPoint, xCenter, yCenter;
 
 
 public Ship(int xloc, int yloc, int width, int height){
@@ -40,6 +39,14 @@ public void moveXDown(){xMove = -5;}
     }
     public double getRadius(){
     return 25;
+    }
+    public int getXCenter(){
+    xCenter = 25+xloc;
+    return xCenter;
+    }
+    public int getYCenter(){
+    yCenter = 25+yloc;
+    return yCenter;
     }
 public void draw(Graphics g2){
     xloc += xMove;
